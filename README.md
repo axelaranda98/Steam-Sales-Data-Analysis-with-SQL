@@ -110,7 +110,9 @@ WHERE `Price ___` > (
 **Insight**: The distribution of game prices is positively skewed, with a long tail of higher-priced games pulling the average up. The fact that more than a third of the games (36.7%) are priced above the average suggests a market with a wide range of pricing tiers.
 
 ### ✅ Key Learnings
-This project demonstrated my ability to perform a complete data analysis workflow, from writing complex queries to deriving meaningful insights. My key learnings include:
-Data Cleaning & Transformation: I used COALESCE and SAFE.PARSE_DATE to handle inconsistent date formats and CASE to create meaningful data categories.
-Data Aggregation: I applied functions like AVG(), COUNT(), and SUM() to calculate key metrics from the dataset.
-Intermediate SQL: I effectively used Common Table Expressions (CTEs) to structure my queries and WHERE clauses with subqueries for dynamic filtering.
+
+This project demonstrated my ability to perform a complete data analysis workflow, from writing complex queries to deriving meaningful insights. 
+My key learnings include:
+**Data Cleaning & Transformation**: I used COALESCE and SAFE.PARSE_DATE to handle inconsistent date formats and CASE to create meaningful data categories.
+**Data Aggregation**: I applied functions like AVG(), COUNT(), and SUM() to calculate key metrics from the dataset.
+**Intermediate SQL**: I effectively used Common Table Expressions (CTEs) to structure my queries and WHERE clauses with subqueries for dynamic filtering.
