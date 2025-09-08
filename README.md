@@ -35,6 +35,8 @@ ORDER BY
 
 #### 🎮 Platform Distribution
 
+SQL Query:
+
 **SQL Query:**
 
 SELECT
