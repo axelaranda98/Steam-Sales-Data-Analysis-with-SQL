@@ -11,7 +11,7 @@ Dataset: https://www.kaggle.com/datasets/benjaminlundkvist/steam-sales-historica
 
 #### 📈 Game Release Trends by Year
 
-**SQL Query:**
+**SQL Query:
 ```sql
 WITH parsed_dates AS (
     SELECT
