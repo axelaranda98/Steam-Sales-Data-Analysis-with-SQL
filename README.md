@@ -114,5 +114,7 @@ WHERE `Price ___` > (
 This project demonstrated my ability to perform a complete data analysis workflow, from writing complex queries to deriving meaningful insights. 
 My key learnings include:
 **Data Cleaning & Transformation**: I used COALESCE and SAFE.PARSE_DATE to handle inconsistent date formats and CASE to create meaningful data categories.
+
 **Data Aggregation**: I applied functions like AVG(), COUNT(), and SUM() to calculate key metrics from the dataset.
+
 **Intermediate SQL**: I effectively used Common Table Expressions (CTEs) to structure my queries and WHERE clauses with subqueries for dynamic filtering.
