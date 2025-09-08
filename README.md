@@ -31,7 +31,7 @@ GROUP BY
 ORDER BY
     release_year;
 
-Insight: The number of new games released on Steam shows a consistent, sharp upward trend, with a significant increase in recent years (2023-2025). This suggests a rapidly expanding market for game development and publishing.
+**Insight:** The number of new games released on Steam shows a consistent, sharp upward trend, with a significant increase in recent years (2023-2025). This suggests a rapidly expanding market for game development and publishing.
 
 #### 🎮 Platform Distribution
 
@@ -44,7 +44,7 @@ SELECT
 FROM
     `profound-actor-470909-r8.Steam_Sales_Historical_Dataset.steam_sales`;
 
-Insight: The market is heavily dominated by Windows, which has over three times as many games as both macOS and Linux combined, indicating that platform support is not balanced.
+**Insight:** The market is heavily dominated by Windows, which has over three times as many games as both macOS and Linux combined, indicating that platform support is not balanced.
 
 #### 💰 Pricing and Discounts
 
