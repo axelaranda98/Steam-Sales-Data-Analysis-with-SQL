@@ -31,9 +31,6 @@ GROUP BY
 ORDER BY
     release_year;
 
-
-
-
 Insight: The number of new games released on Steam shows a consistent, sharp upward trend, with a significant increase in recent years (2023-2025). This suggests a rapidly expanding market for game development and publishing.
 
 #### 🎮 Platform Distribution
