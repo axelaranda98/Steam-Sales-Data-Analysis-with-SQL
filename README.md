@@ -33,6 +33,8 @@ GROUP BY
 ORDER BY
     release_year;
 
+```
+
 **Insight**: The number of new games released on Steam shows a consistent, sharp upward trend, with a significant increase in recent years (2023-2025). This suggests a rapidly expanding market for game development and publishing.
 
 ### 🎮 Platform Distribution
@@ -46,6 +48,7 @@ SELECT
     SUM(CASE WHEN MacOS = 1 THEN 1 ELSE 0 END) AS MacOS_games
 FROM
     `profound-actor-470909-r8.Steam_Sales_Historical_Dataset.steam_sales`;
+```
 
 **Insight**: The market is heavily dominated by Windows, which has over three times as many games as both macOS and Linux combined, indicating that platform support is not balanced.
 
@@ -68,7 +71,7 @@ SELECT COUNT(*) AS games_90_discount
 FROM `profound-actor-470909-r8.Steam_Sales_Historical_Dataset.steam_sales`
 WHERE `Discount%` = -90.0;
 -- Result: 18
-
+```
 **Insight**: The data shows a significant difference between the average original price ($27,314) and the average current price ($12,575), highlighting that deep discounts are a common practice on Steam. The list of games with major discounts also shows that multiple titles have a 90% discount, suggesting this is a frequent marketing strategy.
 
 ### ⭐ Game Ratings and Price Correlation
@@ -91,8 +94,7 @@ GROUP BY
     Rating_Range
 ORDER BY
     MIN(Rating);
-
-
+```
 **Insight**: The majority of games in this dataset fall within the 6.00-7.99 rating range (431 games), indicating that most titles receive a positive but not top-tier rating. The data also suggests a slight inverse correlation, where the highest-rated games are not necessarily the most expensive.
 
 ### 📊 Market Distribution
@@ -104,6 +106,7 @@ WHERE `Price ___` > (
     SELECT AVG(`Price ___`) 
     FROM `profound-actor-470909-r8.Steam_Sales_Historical_Dataset.steam_sales`
 );
+```
 **Insight**: The distribution of game prices is positively skewed, with a long tail of higher-priced games pulling the average up. The fact that more than a third of the games (36.7%) are priced above the average suggests a market with a wide range of pricing tiers.
 
 ### ✅ Key Learnings
