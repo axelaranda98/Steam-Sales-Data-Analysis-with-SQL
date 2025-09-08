@@ -11,7 +11,7 @@ Dataset: https://www.kaggle.com/datasets/benjaminlundkvist/steam-sales-historica
 
 #### 📈 Game Release Trends by Year
 
-**SQL Query:
+**SQL Query:**
 ```sql
 WITH parsed_dates AS (
     SELECT
@@ -31,11 +31,14 @@ GROUP BY
 ORDER BY
     release_year;
 
+
+
+
 Insight: The number of new games released on Steam shows a consistent, sharp upward trend, with a significant increase in recent years (2023-2025). This suggests a rapidly expanding market for game development and publishing.
 
 #### 🎮 Platform Distribution
 
-SQL Queries:
+**SQL Query:**
 
 SELECT
     SUM(CASE WHEN Linux = 1 THEN 1 ELSE 0 END) AS Linux_games,
@@ -48,7 +51,7 @@ Insight: The market is heavily dominated by Windows, which has over three times 
 
 #### 💰 Pricing and Discounts
 
-SQL Queries:
+**SQL Query:**
 
 SQL
 SELECT AVG(`Original Price ___`) FROM `profound-actor-470909-r8.Steam_Sales_Historical_Dataset.steam_sales`;
@@ -68,7 +71,7 @@ Insight: The data shows a significant difference between the average original pr
 
 #### ⭐ Game Ratings and Price Correlation
 
-SQL Query:
+**SQL Query:**
 
 SQL
 SELECT
@@ -93,7 +96,7 @@ Insight: The majority of games in this dataset fall within the 6.00-7.99 rating 
 
 #### 📊 Market Distribution
 
-SQL Query:
+**SQL Query:**
 
 SQL
 SELECT COUNT(*)
